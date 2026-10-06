@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Salgateria Iputinga — Saber que conquista! | Recife</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+--color-cream:#F5F0D8;--color-cream-soft:#FFF8E8;--color-red:#B92E24;--color-red-dark:#651914;--color-burgundy:#3A0908;
+--color-orange:#F28C16;--color-orange-dark:#D7650F;--color-yellow:#FFC21A;--color-green:#3C7A21;--color-black:#11100E;--color-white:#FFFFFF;
+--font-display:"Anton",sans-serif;--font-body:"Inter",sans-serif;
+--radius-sm:6px;--radius-md:10px;--radius-lg:16px;--radius-pill:999px;
+--shadow-sm:0 4px 12px rgba(58,9,8,.08);--shadow-md:0 10px 30px rgba(58,9,8,.12);--shadow-lg:0 20px 50px rgba(58,9,8,.18);
+--container-width:1240px;--transition-fast:150ms ease;--transition-normal:220ms ease-out}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);background:var(--color-cream);color:var(--color-black);line-height:1.55;-webkit-font-smoothing:antialiased}
+.c{max-width:var(--container-width);margin:0 auto;padding:0 20px}
+h1,h2,h3,.logo{font-family:var(--font-display);font-weight:400;text-transform:uppercase;line-height:1.05;letter-spacing:.015em}
+h2{font-size:clamp(2rem,6vw,3.4rem);color:var(--color-burgundy)}
+section{padding:64px 0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--color-orange);outline-offset:3px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 26px;border:0;border-radius:var(--radius-pill);background:var(--color-yellow);color:var(--color-burgundy);font:700 1rem var(--font-body);text-decoration:none;cursor:pointer;box-shadow:var(--shadow-sm);transition:transform var(--transition-fast),box-shadow var(--transition-fast)}
+.btn:hover{transform:translateY(-1px);box-shadow:var(--shadow-md)}
+.btn.red{background:var(--color-red);color:var(--color-white)}
+.btn.lg{min-height:58px;padding:0 40px;font-size:1.15rem}
+.btn.sm{width:100%;min-height:44px;padding:0 12px;font-size:.95rem}
+/* header */
+header{position:sticky;top:0;z-index:20;background:var(--color-burgundy);border-bottom:1px solid var(--color-red-dark)}
+.hd{display:flex;align-items:center;justify-content:space-between;min-height:68px;gap:16px}
+.logo{font-size:1.6rem;color:var(--color-white);text-decoration:none;white-space:nowrap}
+.logo b{color:var(--color-yellow);font-weight:400}
+nav{display:none;gap:28px}
+nav a{color:var(--color-cream);text-decoration:none;font-weight:500;padding:12px 0;transition:color var(--transition-fast)}
+nav a:hover{color:var(--color-yellow)}
+/* hero */
+.hero{padding:40px 0 72px;background:linear-gradient(160deg,var(--color-red-dark) 0%,var(--color-burgundy) 55%,var(--color-black) 100%);color:var(--color-white);overflow:hidden}
+.hero .c{display:grid;gap:24px;align-items:center}
+.eyebrow{color:var(--color-orange);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.8rem;margin-bottom:12px}
+.hero h1{font-size:clamp(3rem,13vw,6.4rem);color:var(--color-white)}
+.hero h1 em{font-style:normal;color:var(--color-yellow)}
+.hero p.sub{margin:18px 0 28px;color:var(--color-cream);font-size:1.1rem;max-width:30rem}
+.plate{position:relative;display:grid;place-items:center;aspect-ratio:1;width:min(100%,460px);margin:0 auto}
+.plate::before{content:"";position:absolute;inset:6%;border-radius:50%;background:radial-gradient(circle,var(--color-orange) 0%,var(--color-red) 55%,transparent 72%);opacity:.85}
+.plate .big{position:relative;font-size:clamp(10rem,46vw,19rem);line-height:1;filter:drop-shadow(0 24px 28px rgba(17,16,14,.55));transform:rotate(-6deg)}
+.plate .s{position:absolute;font-size:clamp(3rem,12vw,5rem);filter:drop-shadow(0 10px 14px rgba(17,16,14,.5))}
+.plate .s1{right:2%;bottom:8%;transform:rotate(12deg)}.plate .s2{left:2%;top:10%}.plate .s3{right:8%;top:4%;font-size:clamp(2rem,8vw,3.2rem)}
+.band{background:var(--color-yellow);color:var(--color-burgundy);padding:14px 0;text-align:center}
+.band .c{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:4px 24px}
+.band b{font:400 clamp(1.4rem,5vw,2rem) var(--font-display);text-transform:uppercase;letter-spacing:.02em}
+.band span{font-weight:700}
+/* destaques */
+.dest{position:relative;background:var(--color-cream);overflow:hidden}
+.dest svg{position:absolute;left:0;top:30px;width:100%;height:300px;z-index:0}
+.dest .c{position:relative;z-index:1}
+.sh{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:16px;margin-bottom:32px}
+.sh p{color:var(--color-red-dark);font-weight:500;margin-top:8px}
+.dest .sh h2,.dest .sh p{color:var(--color-white)}
+.g3{display:grid;gap:20px}
+.card{background:var(--color-white);border-radius:var(--radius-lg);box-shadow:var(--shadow-md);padding:24px;text-align:center;position:relative;transition:transform var(--transition-normal),box-shadow var(--transition-normal)}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.tag{position:absolute;top:16px;left:16px;padding:4px 12px;border-radius:var(--radius-pill);background:var(--color-orange-dark);color:var(--color-white);font-size:.75rem;font-weight:700}
+.tag.g{background:var(--color-green)}
+.ph{display:grid;place-items:center;width:132px;height:132px;margin:0 auto 14px;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--color-yellow),var(--color-orange) 70%);font-size:4.2rem;box-shadow:inset 0 -6px 12px rgba(58,9,8,.18)}
+.card h3,.mc h3{font-size:1.45rem;color:var(--color-burgundy)}
+.card p{color:var(--color-black);opacity:.75;margin:8px 0 14px;font-size:.95rem}
+.pr{font-family:var(--font-display);font-size:1.7rem;color:var(--color-red)}
+.card .pr{display:block;margin-bottom:14px}
+.more{margin-top:32px;text-align:center}
+/* cardápio */
+.menu{background:var(--color-cream-soft)}
+.fl{display:flex;gap:10px;overflow-x:auto;padding:4px 2px 12px;margin-bottom:24px;scrollbar-width:none}
+.fl button{flex:none;min-height:44px;padding:0 22px;border-radius:var(--radius-pill);border:2px solid var(--color-red);background:transparent;color:var(--color-red);font:700 .95rem var(--font-body);cursor:pointer;transition:var(--transition-fast)}
+.fl button:hover{transform:translateY(-1px)}
+.fl button.on{background:var(--color-red);color:var(--color-white)}
+.mg{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.mc{display:flex;flex-direction:column;background:var(--color-white);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);padding:16px 12px;text-align:center;transition:transform var(--transition-normal),box-shadow var(--transition-normal);animation:in .35s ease-out}
+.mc:hover{transform:translateY(-4px);box-shadow:var(--shadow-md)}
+.mc .ph{width:96px;height:96px;font-size:3rem;margin-bottom:10px}
+.mc h3{font-size:1.15rem}
+.mc p{flex:1;font-size:.82rem;opacity:.7;margin:6px 0 10px}
+.mc .pr{font-size:1.4rem;margin-bottom:10px}
+@keyframes in{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:none}}
+/* produto */
+.prod .c{display:grid;gap:36px;align-items:center}
+.pimg{display:grid;place-items:center;aspect-ratio:1;width:min(100%,480px);margin:0 auto;border-radius:50%;background:radial-gradient(circle at 40% 35%,var(--color-orange),var(--color-red) 60%,var(--color-red-dark));font-size:clamp(9rem,40vw,16rem);box-shadow:var(--shadow-lg)}
+.prod h2{margin-bottom:14px}
+.prod .eyebrow{color:var(--color-orange-dark)}
+.prod .d{font-size:1.05rem;max-width:34rem}
+.ing{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}
+.ing li{background:var(--color-white);border-radius:var(--radius-pill);padding:8px 16px;font-weight:500;box-shadow:var(--shadow-sm)}
+.buy{display:flex;align-items:center;flex-wrap:wrap;gap:20px}
+.buy .pr{font-size:2.8rem}
+/* depoimentos */
+.prova{background:var(--color-cream-soft)}
+.prova h2{text-align:center;margin-bottom:32px}
+.prova .card{text-align:left;padding:28px}
+.who{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.av{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:var(--color-orange);color:var(--color-burgundy);font:1.3rem var(--font-display)}
+.who b{display:block;color:var(--color-burgundy)}
+.st{color:var(--color-orange-dark);letter-spacing:2px;font-size:.95rem}
+.prova .card p{margin:0;font-size:1.02rem;opacity:1}
+/* cta */
+.cta{background:var(--color-red-dark);color:var(--color-white);text-align:center;padding:80px 0}
+.cta h2{color:var(--color-white);font-size:clamp(2.4rem,9vw,4.6rem)}
+.cta p{color:var(--color-cream);margin:16px auto 32px;max-width:32rem;font-size:1.1rem}
+/* footer */
+footer{background:var(--color-burgundy);color:var(--color-cream);padding:56px 0 28px}
+.fg{display:grid;gap:32px}
+footer h4{font:1.1rem var(--font-display);text-transform:uppercase;letter-spacing:.05em;color:var(--color-yellow);margin-bottom:10px}
+footer .soc{display:flex;flex-wrap:wrap;gap:10px}
+footer .soc a{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border:1px solid var(--color-red);border-radius:var(--radius-pill);text-decoration:none;transition:var(--transition-fast)}
+footer .soc a:hover{background:var(--color-red);transform:translateY(-1px)}
+.cp{margin-top:40px;padding-top:20px;border-top:1px solid var(--color-red-dark);font-size:.85rem;opacity:.8}
+@media(min-width:768px){
+nav{display:flex}
+.hero .c{grid-template-columns:1.1fr .9fr}
+.g3{grid-template-columns:repeat(3,1fr)}
+.prod .c{grid-template-columns:1fr 1fr}
+.fg{grid-template-columns:1.4fr 1fr 1fr 1fr}
+.mc{padding:20px 16px}
+.mc .ph{width:120px;height:120px;font-size:3.6rem}
+}
+@media(min-width:1024px){.mg{grid-template-columns:repeat(4,1fr);gap:20px}section{padding:88px 0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="c hd">
+  <a class="logo" href="#topo">🔥 Salgateria <b>Iputinga</b></a>
+  <nav aria-label="Principal"><a href="#destaques">Destaques</a><a href="#cardapio">Cardápio</a><a href="#casa">A casa</a><a href="#contato">Contato</a></nav>
+  <a class="btn" href="https://wa.me/5581985439758?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido." target="_blank" rel="noopener">Pedir agora</a>
+ </div>
+</header>
+
+<main id="topo">
+<section class="hero" aria-label="Apresentação">
+ <div class="c">
+  <div>
+   <p class="eyebrow">Salgateria em Iputinga, Recife</p>
+   <h1>Salgado quentinho.<br><em>Promoção todo dia.</em></h1>
+   <p class="sub">Salgados fresquinhos, produção diária e atendimento rápido. Peça pelo WhatsApp ou venha comer no local. Saber que conquista!</p>
+   <a class="btn lg" href="https://wa.me/5581985439758?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido." target="_blank" rel="noopener">Pedir agora</a>
+  </div>
+  <div class="plate" aria-hidden="true"><span class="big">🍗</span><span class="s s1">🌭</span><span class="s s2">🥤</span><span class="s s3">🧀</span></div>
+ </div>
+</section>
+<div class="band"><div class="c"><b>Todo dia é dia de promoção</b><span>Salgado + 1 copo de refrigerante por apenas R$ 4,00</span></div></div>
+
+<section class="dest" id="destaques">
+ <svg viewBox="0 0 1200 300" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70C180 20 330 120 540 75S930 15 1200 85L1200 235C960 290 800 195 570 250S190 225 0 270Z" fill="var(--color-orange)"/></svg>
+ <div class="c">
+  <div class="sh"><div><h2>Fresh &amp; Hot</h2><p>Saindo da cozinha, direto pra você</p></div></div>
+  <div class="g3" id="dg"></div>
+  <div class="more"><a class="btn red lg" href="#cardapio">Ver cardápio completo</a></div>
+ </div>
+</section>
+
+<section class="menu" id="cardapio">
+ <div class="c">
+  <div class="sh"><div><h2>Cardápio</h2><p>Toque em pedir e a gente abre o WhatsApp pra você.</p></div></div>
+  <div class="fl" role="group" aria-label="Filtrar por categoria">
+   <button class="on" data-f="todos">Todos</button><button data-f="salgados">Salgados</button><button data-f="lanches">Lanches</button><button data-f="combos">Combos</button><button data-f="bebidas">Bebidas</button>
+  </div>
+  <div class="mg" id="mg" aria-live="polite"></div>
+ </div>
+</section>
+
+<section class="prod" aria-label="Promoção em destaque">
+ <div class="c">
+  <div class="pimg" aria-hidden="true">🍗</div>
+  <div>
+   <p class="eyebrow">Promoção da casa</p>
+   <h2>Salgado + Refri</h2>
+   <p class="d">Escolha seu salgado favorito e leve junto um copo de refrigerante gelado. Produção diária, sabor que conquista e preço que cabe no bolso, de terça a domingo.</p>
+   <ul class="ing"><li>🍗 Salgado fresquinho</li><li>🥤 Copo de refrigerante</li><li>⚡ Atendimento rápido</li><li>📍 Consumo no local</li></ul>
+   <div class="buy"><span class="pr">R$ 4,00</span><button class="btn red lg" data-p="Salgado + Refri (promoção)">Quero pedir</button></div>
+  </div>
+ </div>
+</section>
+
+<section class="prova" id="casa">
+ <div class="c">
+  <h2>A casa entrega</h2>
+  <div class="g3">
+   <article class="card"><div class="who"><span class="av">🔥</span><b>Produção diária</b></div><p>Salgados sempre fresquinhos, feitos no dia e servidos quentinhos.</p></article>
+   <article class="card"><div class="who"><span class="av">⚡</span><b>Atendimento rápido</b></div><p>Pediu pelo WhatsApp ou no balcão e recebe sem demora.</p></article>
+   <article class="card"><div class="who"><span class="av">❤️</span><b>Sabor que faz voltar</b></div><p>Sabor que conquista na primeira mordida e faz você voltar sempre.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="cta" aria-label="Pedir agora">
+ <div class="c">
+  <h2>Bateu a fome?<br>Chama no WhatsApp.</h2>
+  <p>Peça pelo (81) 98543-9758 ou venha comer aqui, ao lado da Milla Eventos.</p>
+  <a class="btn lg" href="https://wa.me/5581985439758?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido." target="_blank" rel="noopener">Pedir agora</a>
+ </div>
+</section>
+</main>
+
+<footer id="contato">
+ <div class="c">
+  <div class="fg">
+   <div><a class="logo" href="#topo">🔥 Salgateria <b>Iputinga</b></a><p style="margin-top:10px">Saber que conquista!</p></div>
+   <div><h4>Endereço</h4><p>Av. Rev. Dr. Israel Gueiros, 673-771<br>Recife, PE<br>Ao lado da Milla Eventos</p></div>
+   <div><h4>Funcionamento</h4><p>Terça a Domingo<br>Horários pelo WhatsApp</p></div>
+   <div><h4>Fale com a gente</h4><div class="soc"><a href="https://wa.me/5581985439758?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido." target="_blank" rel="noopener">WhatsApp</a><a href="https://www.instagram.com/salgateria_iputinga/" target="_blank" rel="noopener">Instagram</a></div></div>
+  </div>
+  <p class="cp">© 2026 Salgateria Iputinga. Pedidos ou consumo no local.</p>
+ </div>
+</footer>
+
+<script>
+const M=[
+{c:'salgados',e:'🍗',n:'Coxinha',d:'Massa crocante, recheio cremoso de frango, feita no dia',p:3},
+{c:'salgados',e:'🥟',n:'Pastel',d:'Massa fina e sequinha, saindo quentinho da fritadeira',p:4},
+{c:'salgados',e:'🧀',n:'Bolinha de queijo',d:'Queijo derretendo por dentro, dourada por fora',p:3.5},
+{c:'lanches',e:'🌭',n:'Hot Dog',d:'Pão macio, salsicha, molho e batata palha',p:3},
+{c:'lanches',e:'🍔',n:'X-Burguer',d:'Hambúrguer, queijo e salada no pão tostado',p:8},
+{c:'combos',e:'🥤',n:'Salgado + Refri',d:'Um salgado e um copo de refrigerante gelado',p:4},
+{c:'bebidas',e:'🥤',n:'Refrigerante (copo)',d:'Gelado, na medida pra acompanhar seu salgado',p:2},
+{c:'bebidas',e:'🧃',n:'Suco natural',d:'Feito na hora, sem pressa e sem enrolação',p:6}];
+const R=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+const $=s=>document.querySelector(s);
+const tg=[[0,'🔥 Hot',''],[5,'💰 Promo',''],[3,'🌿 Fresh','g']];
+$('#dg').innerHTML=tg.map(([i,t,k])=>{const m=M[i];return `<article class="card"><span class="tag ${k}">${t}</span><div class="ph" aria-hidden="true">${m.e}</div><h3>${m.n}</h3><p>${m.d}</p><span class="pr">${R(m.p)}</span><button class="btn red sm" data-p="${m.n}">Quero pedir</button></article>`}).join('');
+function draw(f){$('#mg').innerHTML=M.filter(m=>f==='todos'||m.c===f).map(m=>`<article class="mc"><div class="ph" aria-hidden="true">${m.e}</div><h3>${m.n}</h3><p>${m.d}</p><span class="pr">${R(m.p)}</span><button class="btn sm" data-p="${m.n}">Pedir agora</button></article>`).join('')}
+document.querySelectorAll('.fl button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.fl button').forEach(x=>x.classList.remove('on'));b.classList.add('on');draw(b.dataset.f)});
+draw('todos');
+document.addEventListener('click',e=>{const b=e.target.closest('[data-p]');if(b)open('https://wa.me/5581985439758?text='+encodeURIComponent('Olá, Salgateria Iputinga! Quero pedir: '+b.dataset.p),'_blank')});
+</script>
+</body>
+</html>
